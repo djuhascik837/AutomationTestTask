@@ -23,3 +23,8 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('clickBtn', (btnRef, urlRef) => {
+    cy.get(btnRef).click();
+    cy.url().should('include', urlRef);
+})

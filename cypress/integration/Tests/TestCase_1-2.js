@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-context('Test Case 1 and 2', () => {
+context('Test Case 1 and 2 - Edit and Delete hyperlinks', () => {
   beforeEach(() => {
 
     cy.intercept({
